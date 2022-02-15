@@ -1,6 +1,6 @@
 <img src="https://storage.googleapis.com/golden-wind/experts-club/capa-github.svg" />
 
-# Título
+# Tipagem de mensagens com Protobuf
 
 Introdução ao seu projeto. Apresentado por [Lucas Santos][1].
 
