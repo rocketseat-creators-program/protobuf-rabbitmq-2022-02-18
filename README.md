@@ -2,7 +2,7 @@
 
 # Tipagem de mensagens com Protobuf
 
-Introdução ao seu projeto. Apresentado por [Lucas Santos][1].
+Nesta aula vamos aprendemos como podemos tipar mensagens assíncronas e eventos de mensageria usando protobuf. Apresentado por [Lucas Santos][1].
 
 > __Atenção__: Este é o projeto completo, se você está procurando o projeto de template, vá para [este repositório](https://github.com/rocketseat-experts-club/template-protobuf-rabbitmq)
 
