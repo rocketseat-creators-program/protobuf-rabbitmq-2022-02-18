@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+message CreateTask {
+  string id = 1;
+  string assignee = 2;
+  string title = 3;
+  string created = 4;
+  bool done = 5;
+  optional string priority = 6;
+  optional string description = 7;
+  optional string dueDate = 8;
+}
+
+message ChangeTaskStatus {
+  string id = 1;
+  bool done = 2;
+}
+
+message DeleteTask {
+  string id = 1;
+}
