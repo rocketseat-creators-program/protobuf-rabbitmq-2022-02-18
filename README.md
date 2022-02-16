@@ -10,9 +10,9 @@ Introdução ao seu projeto. Apresentado por [Lucas Santos][1].
 
 1. Clone o repositório
 2. Instale as dependencias indo até as pastas `producer` e `consumer` e rodando `npm install`
-3. Na raiz do projeto, execute o comando `docker compose up -d broker` para iniciar o servidor do RabbitMQ
-
-Você também pode iniciar o projeto completo através de `docker compose up`
+3. Na raiz do projeto, execute o comando `docker compose up -d` para iniciar o servidor do RabbitMQ
+4. Use o comando `source .envrc && npm run start:producer` para criar um produtor e `source .envrc && npm run start:consumer` para criar um consumidor
+5. Abra o navegador em `http://localhost:8080` faça login com o usuário `guest` e a senha `guest` para ver os status do broker
 
 ## Expert
 
