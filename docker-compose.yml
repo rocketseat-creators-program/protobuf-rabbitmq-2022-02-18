@@ -1,22 +1,6 @@
 version: '3.7'
 
 services:
-  consumer:
-    build: ./consumer
-    environment:
-      - RABBITMQ_HOSTNAME=broker:5672
-      - RABBITMQ_USER=guest
-      - RABBITMQ_PASSWORD=guest
-    depends_on:
-      - broker
-  producer:
-    build: ./producer
-    environment:
-      - RABBITMQ_HOSTNAME=broker:5672
-      - RABBITMQ_USER=guest
-      - RABBITMQ_PASSWORD=guest
-    depends_on:
-      - broker
   broker:
     image: rabbitmq:3-management-alpine
     hostname: broker
