@@ -21,8 +21,7 @@
   },
   "homepage": "https://github.com/rocketseat-experts-club/protobuf-rabbitmq#readme",
   "dependencies": {
-    "amqplib": "^0.8.0",
-    "google-protobuf": "^3.19.4"
+    "amqplib": "^0.8.0"
   },
   "devDependencies": {
     "@types/amqplib": "^0.8.2",
