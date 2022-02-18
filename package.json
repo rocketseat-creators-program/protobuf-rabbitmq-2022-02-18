@@ -7,7 +7,7 @@
     "start:producer": "node ./producer/index.mjs",
     "start:consumer": "node ./consumer/index.mjs",
     "start:broker": "docker compose up broker -d",
-    "compile": "protoc --js_out=import_style=commonjs_strict,binary:./proto ./proto/*.proto"
+    "compile": "protoc --js_out=import_style=commonjs_strict,binary:./ ./proto/*.proto"
   },
   "repository": {
     "type": "git",

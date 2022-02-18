@@ -39,13 +39,13 @@ class RabbitMQClient {
    */
   static #instance = null
 
-  static async create ({ host, username, password }) {
-    if (!RabbitMQClient.#instance) RabbitMQClient.#instance = (new RabbitMQClient({ host, username, password })).#connect({ host, username, password })
+  static async create (config) {
+    if (!RabbitMQClient.#instance) RabbitMQClient.#instance = (new RabbitMQClient()).#connect(config)
     return RabbitMQClient.#instance
   }
 
-  async #connect ({ host, username, password }) {
-    this.#connectionString = `amqp://${username}:${password}@${host}`
+  async #connect (config) {
+    if (!this.#connectionString && config) this.#connectionString = `amqp://${config.username}:${config.password}@${config.host}`
     this.#connection = await amqp.connect(this.#connectionString)
     this.#channel = await this.#connection.createChannel()
     return this
